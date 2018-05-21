@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int T;
+    scanf("%d", &T);
+
+    while(T--) {
+        int a, b, c;
+        scanf("%d%d%d", &a, &b, &c);
+
+        double s = (a + b + c * 1.0) / 2;
+
+        printf("Area = %0.3lf\n", sqrt(s * (s - a) * (s - b) * (s - c)));
+    }
+
+    return 0;
+}
